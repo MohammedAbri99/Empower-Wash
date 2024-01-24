@@ -1,0 +1,33 @@
+﻿.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.services {
+    width: 10em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+    .services:hover {
+        transform: scale(1,1);
+    }
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+}

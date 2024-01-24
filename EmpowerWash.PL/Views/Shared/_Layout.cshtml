@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css" integrity="sha512-ZuRTqfQ3jNAKvJskDAU/hxbX1w25g41bANOVd1Co6GahIe2XjM6uVZ9dh0Nt3KFCOA061amfF2VeL60aJXdwwQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/58c32c26b1.js" crossorigin="anonymous"></script>
+    @if (ViewBag.AdditionalStyleBundle != null)
+    {
+        <link rel="stylesheet" href="@Url.Content(ViewBag.AdditionalStyleBundle)" />
+    }
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="~/images/logo.png" height="60px" width="60px" alt="Empower Wash Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="Services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="Contact">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item pe-2"><a href="./signup.html" class="nav-link"><i class="fa-solid fa-user-plus"></i> Sign up</a></li>
+                        <li class="nav-item"><a href="./login.html" class="nav-link"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="flex-grow-1">
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <div class="bg-secondary">
+        <footer class="container mt-auto">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <h5 >Empower Wash</h5>
+                    <p><i class="fa-solid fa-envelope"></i>EmpowerWash@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>99874536</p>
+                </div>
+                <div class="col-4">
+                    <h5>Get In Touch</h5>
+                    <i class="fa-brands fa-instagram p-2" style="font-size: 1.5rem;"></i>
+                    <i class="fa-brands fa-square-facebook p-2" style="font-size: 1.5rem;"></i>
+                    <i class="fa-brands fa-x-twitter p-2" style="font-size: 1.5rem;"></i>
+                </div>
+                <div class="col-2">
+                    <ul style="list-style-type: none;">
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Sign Up</li>
+                        <li>Login</li>
+                        <li>Services</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-2 text-center"><i class="fa-solid fa-shield-halved"></i>Privacy Policy</div>
+                <div class="col-2 text-center"><i class="fa-solid fa-map"></i>Location</div>
+                <div class="col-2 text-center"><i class="fa-solid fa-info"></i>Support</div>
+                <div class="col-6 text-center"><i class="fa-solid fa-copyright"></i>All Right Reserved</div>
+            </div>             
+        </footer>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

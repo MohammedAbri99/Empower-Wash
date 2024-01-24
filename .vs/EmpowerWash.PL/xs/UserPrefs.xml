@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{B211D04E-A717-4B94-9B11-E3C34D683BB8}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EmpowerWash.BLL/Repository/UniteOfWork.cs">
+    <Files>
+      <File FileName="EmpowerWash.BLL/Interfaces/IUniteOfWprk.cs" Line="4" Column="31" />
+      <File FileName="EmpowerWash.BLL/Repository/UniteOfWork.cs" Line="21" Column="10" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="EmpowerWash.PL">
+            <Node name="EmpowerWash.BLL">
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Repository" expanded="True">
+                <Node name="UniteOfWork.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="EmpowerWash.DAL" expanded="True">
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.EmpowerWash.PL PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.EmpowerWash.BLL FirstBuild="True" />
+</Properties>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\EmpowerWash.PL.props" />
+</Project>
